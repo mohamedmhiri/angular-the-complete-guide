@@ -1,0 +1,15 @@
+<h1>String Interpolation</h1>
+<p>
+    {{StringInterpolation}}
+</p>
+<h1>Property Binding</h1>
+<!--<input type="text" value="{{StringInterpolation}}">-->
+<!-- This is not a default html attribute,
+ it's instead refering to the DOm 'value' property  -->
+<input type="text" [value]="getAge()">
+<p [ngClass]="{ redBorder: true}">ok</p>
+<p [ngStyle]="{ color: 'blue'}">hhoh</p>
+<h2>Customer Property Binding</h2>
+<app-customer-preperty [result]="10" (clicked)="onClicked($event)">
+    
+</app-customer-preperty>
